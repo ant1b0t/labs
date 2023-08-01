@@ -1,6 +1,6 @@
 name: Manual Triggering new
 run-name: ${{ github.actor }} is testing out GitHub Actions. Manual 🚀
-on: [workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
