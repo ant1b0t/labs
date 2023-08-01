@@ -1,9 +1,7 @@
 name: Manual Triggering
 on: [workflow_dispatch]
 jobs:
-  print-tag:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    if:  ${{ inputs.print_tags }} 
     steps:
-      - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.tags }} 
+      - run: echo "🎉 Workflow is triggered manually."
